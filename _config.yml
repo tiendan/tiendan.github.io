@@ -14,7 +14,7 @@ baseurl:          /
 
 author:
   name:           'Onur Ferhat'
-  url:            https://onurferhat.com
+  url:            http://onurferhat.com
 
 paginate:         5
 
@@ -22,4 +22,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/tiendan
+  repo:           http://github.com/tiendan
