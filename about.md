@@ -20,9 +20,9 @@ I'm a computer scientist and programmer from **Turkey**, currently living in **B
 
 ## Work Experience
 
-* 2009-2011: Software developer at [Banksoft](http://www.banksoft.com.tr/en/)
-* 2008-2009: Software developer at [Inveon](http://www.inveon.com.tr/)
-* 2007-2009: Translator at [Nuna Localization](http://nuna.com.tr/)
+* **2009-2011:** Software developer at [Banksoft](http://www.banksoft.com.tr/en/)
+* **2008-2009:** Software developer at [Inveon](http://www.inveon.com.tr/)
+* **2007-2009:** Translator at [Nuna Localization](http://nuna.com.tr/)
 
 ## Languages
 * Turkish: Native
@@ -33,7 +33,7 @@ I'm a computer scientist and programmer from **Turkey**, currently living in **B
 ## Skills
 
 ### Programming
-* Most recent: C++, Matlab, Django, JavaScript, SQL
+* Most recent: C++, Python, Matlab, Django, JavaScript, SQL
 * Also: C, C#, Java, Perl, Ruby on Rails
 
 ### Systems
