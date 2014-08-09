@@ -3,28 +3,50 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I'm a computer scientist and programmer from **Turkey**, currently living in **Barcelona, Spain**. I'm working on my PhD thesis on **computer vision** at [Computer Vision Center (CVC), Barcelona](http://www.cvc.uab.es/) and [Autonomous University of Barcelona (UAB)](http://www.uab.cat/).
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## Education
 
-There are currently two themes built on Poole:
+* **2011-(2015):** PhD in Computer Vision, supervised by [Fernando Vilariño](http://mv.cvc.uab.es/people/fernando-vilarino)- CVC *and* UAB
+* **2011-2012:** Master in Computer Vision and Artificial Intelligence - UAB
+* **2004-2009:** Bachelor of Science in Computer Engineering - [Bogazici University (BOUN)](http://www.boun.edu.tr/)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Teaching Experience (as teaching assistant)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+* Spring 2014: Robotics (UAB)
+* Spring 2014: Multimedia Systems (UAB)
+* Fall 2011, Fall 2012: Programming Laboratory (UAB)
+* Spring 2008: Digital Design (BOUN)
 
-## Setup
+## Work Experience
 
-Some fun facts about the setup of this project include:
+* 2009-2011: Software developer at [Banksoft](http://www.banksoft.com.tr/en/)
+* 2008-2009: Software developer at [Inveon](http://www.inveon.com.tr/)
+* 2007-2009: Translator at [Nuna Localization](http://nuna.com.tr/)
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+## Languages
+* Turkish: Native
+* English: Advanced
+* Spanish: Intermediate
+* Catalan: Beginner
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+## Skills
 
-Thanks for reading!
+### Programming
+* Most recent: C++, Matlab, Django, JavaScript, SQL
+* Also: C, C#, Java, Perl, Ruby on Rails
+
+### Systems
+
+* Windows
+* Linux
+* Mac OS X
+
+### Applications
+
+* Microsoft Visual Studio
+* Eclipse
+* Adobe Photoshop/InDesign/Illustrator
+* Microsoft Office
+
+
