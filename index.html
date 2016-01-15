@@ -1,37 +1,190 @@
----
-layout: default
-title: Home
----
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Personal and academic information, projects, publications for Onur Ferhat.">
+    <meta name="author" content="Onur Ferhat">
+    <link rel="icon" href="../../favicon.ico">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <title>Onur Ferhat</title>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+      
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Alegreya+Sans+SC|Alegreya+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+    <div class="container">
+        
+    <!-- Fixed navbar -->
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Projects</a></li>
+                <li role="presentation"><a href="#">Academic</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Onur Ferhat</h3>
+    </div>
+        
+    <div class="container theme-showcase col-md-9" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1><strong>Onur Ferhat</strong></h1>
+        <h3>Computer Scientist / Engineer</h3>
+        <p>I'm a computer science PhD student in <strong>Barcelona</strong>. My specialization area is <strong>computer vision</strong> and I'm working on my thesis about <strong>natural light gaze trackers</strong> at <a href="http://www.cvc.uab.es/" target="_blank">Computer Vision Center (CVC)</a> and <a href="http://www.uab.cat/" target="_blank">Autonomous University of Barcelona (UAB)</a>.</p>
+      </div>
+        
+        <div>
+            <div class="page-header">
+                <h2 class="section-title">Profile</h2>
+            </div>
+            
+            <h3 class="section-item-title-1">Born</h3>
+            <p>1986 - Mardin, Turkey</p>
+            
+            <h3 class="section-item-title-1">Email</h3>
+            <p>onur.ferhat@gmail.com</p>
+            <p>oferhat@cvc.uab.es</p>
+            
+            <h3 class="section-item-title-1">Web Presence</h3>
+            
+            <a href="http://mv.cvc.uab.es/people/onur-ferhat" class="presence-icon btn" target="_blank"><i class="fa fa-institution"></i></a> 
+            <a href="https://www.linkedin.com/in/onurferhat" class="presence-icon btn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <a href="http://github.com/tiendan/" class="presence-icon btn" target="_blank"><i class="fa fa-github-square"></i></a> 
+        </div>
+            
+        <div>
+            <div class="page-header">
+            <h2 class="section-title">Education</h2>
+            </div>
+            <h3 class="section-item-title-1">PhD in Computer Vision</h3>
+            <h4 class="graduation-time"><i class="fa fa-university"></i> Universitat Aut&ograve;noma de Barcelona <span class="graduation-date">2011 &mdash; 2016 (est.)</span></h4>
+            <div class="graduation-description">
+                        <p>I have been working on natural light gaze trackers since 2011 under supervision of <a href="http://vi.cvc.uab.es/fernando-vilarino">Dr. Fernando Vilari&ntilde;o</a>. Our work is focused on implementing novel gaze tracking algorithms and making the trackers more robust and easier to use. For more, see my detailed <a href="#TODO">academic information</a>.</p>
+            </div>
+            
+            
+            <h3 class="section-item-title-1">MSc in Computer Vision and Artificial Intelligence</h3>
+            <h4 class="graduation-time"><i class="fa fa-university"></i> Universitat Aut&ograve;noma de Barcelona <span class="graduation-date">2011 &mdash; 2012</span></h4>
+            
+            <div class="graduation-description">
+                        <p>I finished a one year master programme and started my specialization in computer vision. </p>
+            </div>
+            
+            <h3 class="section-item-title-1">BSc in Computer Engineering</h3>
+            <h4 class="graduation-time"><i class="fa fa-university"></i> Bo&#287;azi&ccedil;i University <span class="graduation-date">2004 &mdash; 2009</span></h4>
+            <div class="graduation-description">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        
+        <div>
+            <div class="page-header">
+            <h2 class="section-title">Work Experience</h2>
+            </div>
+            <h3 class="section-item-title-1">Banksoft - Payment Systems Solutions <a href="http://www.banksoft.com.tr/en/" target="_blank"><i class="fa fa-external-link"></i></a></h3>
+            <h4 class="job"><i class="fa fa-flag"></i> Software Developer <span class="job-date">2009 &mdash; 2011</span></h4>
+            <div class="job-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+
+            <h3 class="section-item-title-1">Inveon <a href="http://www.inveon.com.tr/en/?lang=en" target="_blank"><i class="fa fa-external-link"></i></a></h3>
+            <h4 class="job"><i class="fa fa-flag"></i> Software Developer <span class="job-date">2008 &mdash; 2009</span></h4>
+            <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            
+            <h3 class="section-item-title-1">Nuna Localization <a href="http://nuna.com.tr/home" target="_blank"><i class="fa fa-external-link"></i></a></h3>
+            <h4 class="job"><i class="fa fa-flag"></i> Freelance Translator <span class="job-date">2007 &mdash; 2009</span></h4>
+            <div class="job-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        
+        <div>
+            <div class="page-header">
+            <h2 class="section-title">Skills</h2>
+            </div>
+
+            <h3 class="section-item-title-1">Specialized Skills</h3>
+            <span class="label label-special">Image processing</span>
+            <span class="label label-special">Artificial intelligence</span>
+            
+            <h3 class="section-item-title-1">Code Skills</h3>
+            <span class="label label-code">C/C++</span>
+            <span class="label label-code">C#</span>
+            
+            <span class="label label-web">Python</span>
+            <span class="label label-web">Django</span>
+            <span class="label label-web">Javascript</span>
+            <span class="label label-web">HTML</span>
+            <span class="label label-web">CSS</span>
+            <span class="label label-other">Matlab</span>
+            
+            <h3 class="section-item-title-1">Software Skills</h3>
+            <span class="label label-software">Git</span>
+            <span class="label label-software">Visual Studio</span>
+            <span class="label label-software">Adobe Photoshop</span>
+            <span class="label label-software">Adobe Illustrator</span>
+        </div>
+    </div> <!-- /container -->
+ 
+<div class="col-md-3" role="complementary">
+	<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+		<ul class="nav bs-docs-sidenav">
+			<li>
+				<a href="#profile">Profile</a>
+			</li>
+			<li>
+				<a href="#education">Education</a>
+			</li>
+			<li>
+				<a href="#work-experience">Work Experience</a>
+			</li>
+		</ul>
+	</nav>
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+        </div>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+    
+    <script src="js/custom.js"></script>
+  </body>
+</html>
