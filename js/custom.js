@@ -2,7 +2,7 @@ $(function() {
     $("body").scrollspy({target:".bs-docs-sidebar"});
     var b=$(window),
         c=$(document.body);
-    c.scrollspy({target:".bs-docs-sidebar"});
+    c.scrollspy({target:".bs-docs-sidebar", offset: "-100"});
     b.on("load",function(){c.scrollspy("refresh")});
     $(".bs-docs-container [href=#]").click(function(a){a.preventDefault()});
     setTimeout(function(){

@@ -3,6 +3,7 @@ body {
   padding-bottom: 30px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.8em;
+    position: relative;
 }
 
 h1 {
