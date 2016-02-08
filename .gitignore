@@ -39,3 +39,29 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+tema_deneme/css/animate.min.css
+
+resume/latex/resume.aux
+
+resume/latex/resume.bbl
+
+resume/latex/resume.bcf
+
+resume/latex/resume.blg
+
+resume/latex/resume.out
+
+resume/latex/resume.pdf
+
+resume/latex/resume.run.xml
+
+resume/latex/resume.xtx.bbl
+
+resume/latex/resume.xtx.blg
+
+resume/latex/biber
+
+NOTES.txt
+
+img/uab.jpg
