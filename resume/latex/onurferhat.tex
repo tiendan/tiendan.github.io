@@ -1,0 +1,99 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage[super]{nth}
+
+% Configure page margins with geometry
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{0062AB} %
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Onur}{Ferhat}
+\position{Computer Scientist{\enskip\cdotp\enskip}Engineer}
+\address{Computer Vision Center, Edificio O, Campus UAB 08193 Barcelona SPAIN}
+
+\mobile{(+34) 633 032 866} 
+\email{oferhat@cvc.uab.es}
+\homepage{onurferhat.com}
+\github{tiendan}
+\linkedin{onurferhat}
+% \stackoverflow{SOid}{SOname}
+% \twitter{@twit}
+% \skype{skypeid}
+% \extrainfo{extra informations}
+
+%\quote{``Make the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {onurferhat.com}
+  {Onur Ferhat~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/summary.tex}
+\input{resume/1_education.tex}
+\input{resume/2_honors.tex}
+\input{resume/3_experience.tex}
+\input{resume/4_teaching.tex}
+\input{resume/5_opensource.tex}
+\input{resume/6_participation.tex}
+%\input{resume/7_extracurricular.tex}
+\input{resume/8_publications.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
