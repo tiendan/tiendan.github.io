@@ -1923,7 +1923,7 @@ if (typeof jQuery === 'undefined') {
       offsetMethod = 'position'
       offsetBase   = this.$scrollElement.scrollTop()
     }
-
+      
     this.$body
       .find(this.selector)
       .map(function () {
@@ -1951,7 +1951,7 @@ if (typeof jQuery === 'undefined') {
     var targets      = this.targets
     var activeTarget = this.activeTarget
     var i
-
+      
     if (this.scrollHeight != scrollHeight) {
       this.refresh()
     }

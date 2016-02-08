@@ -1,22 +1,19 @@
 $(function() {
-    $("body").scrollspy({target:".bs-docs-sidebar"});
-    var b=$(window),
-        c=$(document.body);
-    c.scrollspy({target:".bs-docs-sidebar", offset: "-100"});
-    b.on("load",function(){c.scrollspy("refresh")});
-    $(".bs-docs-container [href=#]").click(function(a){a.preventDefault()});
-    setTimeout(function(){
-        var b=$(".bs-docs-sidebar");
-        b.affix({
-            offset:{top:
-                        function(){var c=b.offset().top,d=parseInt(b.children(0).css("margin-top"),10),e=$(".bs-docs-nav").height();return this.top=c-e-d},
-                    bottom:function(){return this.bottom=$(".bs-docs-footer").outerHeight(!0)}
-                   }
-        })},100);
+    $("body").scrollspy({target:".sidebar"});
     
+    $(window).on("load",function(){$("body").scrollspy("refresh")});
+    
+    // Disable sidebar links' default action
+    $(".sidebar-container [href=#]").click(function(a){a.preventDefault()});
+    
+    // Enable the fixed sidebar
+    $(".sidebar").affix({offset: {top: $(".sidebar-container").position().top}});
+    
+    // Show the anchors for the CV sections
     anchors.options = {
         visible: 'always',
-        placement: 'left'
+        placement: 'left',
+        icon: ''
     };
     
     anchors.add('h2');
