@@ -1,0 +1,425 @@
+.mon-container
+{
+	display: inline-block;
+	margin: 30px;
+}
+.mon-screen-container
+{
+	border-radius: 9px;
+	overflow: hidden;
+}
+.mon-small .mon-screen-container
+{
+	border-radius: 6px;
+}
+.mon-large .mon-screen-container
+{
+	border-radius: 12px;
+}
+.mon-laptop-screen-container
+{
+	border-radius: 9px 9px 0px 0px;
+	overflow: hidden;
+}
+.mon-small .mon-laptop-screen-container
+{
+	border-radius: 6px 6px 0px 0px;
+}
+.mon-large .mon-laptop-screen-container
+{
+	border-radius: 12px 12px 0px 0px;
+}
+.mon-screen:before
+{
+	content: "";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+}
+.mon-screen:after
+{
+	content: "";
+	left: 50%;
+	position: absolute;
+}
+.mon-screen > div
+{
+	position: relative;
+}
+.mon-monitor
+{
+	border: 12px solid #474e5d;
+	border-radius: 9px;
+	display: inline-block;
+	position: relative;
+}
+.mon-monitor:before
+{
+	background: #a5adbd;
+	border-radius: 6px;
+	height: 6px;
+	margin-left: -3px;
+	top: -9px;
+	width: 6px;
+}
+.mon-monitor:after
+{
+	background: #e8ebf0;
+	border-radius: 8px;
+	bottom: -6px;
+	height: 8px;
+	margin-bottom: -4px;
+	margin-left: -4px;
+	width: 8px;
+}
+.mon-content
+{
+	display: inline-block;
+}
+.mon-reflection.mon-content:before
+{
+	background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%);
+	content: "";
+	display: inline-block;
+	height: 389px;
+	position: absolute;
+	right: 0;
+	top: -25%;
+	transform: rotate(-45deg);
+	transform-origin: top right;
+	width: 800px;
+	z-index: 5;
+}
+.mon-base-container
+{
+	position: relative;
+	width: 100%;
+}
+.mon-base
+{
+	top: 0px;
+	height: 50px;
+	margin: auto;
+	border-bottom: 42px solid #e8ebf0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	width: 110px;
+	height: 0;
+	position: relative;
+}
+
+.mon-base > div
+{
+	position: relative;
+}
+.mon-grey-shadow
+{
+	height: 0px;
+	top: 0;
+	width: 90px;
+	left: -2px;
+	display: block;
+	border-bottom: 7px solid #d8dbe1;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+
+.mon-foot
+{
+	background: #e8ebf0;
+	z-index: 1;
+}
+.mon-foot.mon-top
+{
+	height: 0;
+	margin: auto;
+	border-bottom: 5px solid #e8ebf0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 130px;
+	background: none;
+	margin-top: -1px;
+}
+
+.mon-foot.mon-bottom
+{
+    height: 4px;
+    margin: auto;
+    width: 130px;
+}
+.mon-shadow
+{
+	background: radial-gradient(ellipse at center, rgba(204,204,204,0.6) 0%,rgba(204,204,204,0.4) 53%, rgba(46,204,113,0) 80%,rgba(46,204,113,0) 100%);
+	bottom: -20px;
+	height: 15px;
+	left: 20%;
+	margin: auto;
+    margin-top: -5px;
+	width: 60%;
+	z-index: -1;
+}
+.mon-large .mon-monitor
+{
+	border-radius: 12px;
+	border-width: 18px;
+}
+.mon-small .mon-monitor
+{
+	border-radius: 6px;
+	border-width: 8px;
+}
+.mon-large .mon-monitor:before
+{
+	height: 8px;
+	top: -13px;
+	width: 8px;
+}
+.mon-large .mon-monitor:after
+{
+	bottom: -11px;
+	height: 12px;
+	margin-left: -6px;
+	width: 12px;
+}
+.mon-small .mon-monitor:before
+{
+	height: 4px;
+	margin-left: -2px;
+	top: -6px;
+	width: 4px;
+}
+.mon-small .mon-monitor:after
+{
+	bottom: -3px;
+	height: 6px;
+	margin-left: -3px;
+	width: 6px;
+}
+.mon-small .mon-base
+{
+    height: 30px;
+	border-bottom-width: 28px;
+	border-left-width: 8px;
+	border-right-width: 8px;
+	width: 70px;
+	height: 0;
+	position: relative;
+}
+.mon-small .mon-grey-shadow
+{
+	width: 58px;
+}
+.mon-small .mon-foot.mon-top
+{
+	border-bottom-width: 5px;
+	border-left-width: 10px;
+	border-right-width: 10px;
+	width: 90px;
+}
+.mon-small .mon-foot.mon-bottom
+{
+    height: 3px;
+    width: 90px;
+}
+.mon-phone
+{
+	background: #000;
+	border: 40px solid #2f343e;
+	border-left: 10px solid #2f343e;
+	border-radius: 9px;
+	border-right: 10px solid #2f343e;
+	display: inline-block;
+	position: relative;
+}
+.mon-phone:before,
+.mon-phone:after
+{
+	background: #474e5d;
+}
+.mon-phone:before
+{
+	background: #474e5d;
+	border-radius: 3px;
+	height: 6px;
+	margin-left: -20px;
+	top: -22px;
+	width: 40px;
+}
+.mon-phone:after
+{
+	border-radius: 10px;
+	bottom: -30px;
+	height: 20px;
+	margin-left: -10px;
+	width: 20px;
+}
+.mon-phone .mon-content
+{
+	background: #fff;
+	left: 0%;
+	margin-left: 0px;
+	position: relative;
+}
+.mon-phone-base
+{
+	margin: auto;
+	width: 100%;
+}
+.mon-phone-base .mon-shadow
+{
+	width: 100%;
+}
+.mon-small .mon-phone
+{
+	border-left-width: 5px;
+	border-radius: 6px;
+	border-right-width: 5px;
+	border-top-width: 20px;
+	border-bottom-width: 20px;
+}
+.mon-large .mon-phone
+{
+	border-left-width: 15px;
+	border-radius: 12px;
+	border-right-width: 15px;
+	border-top-width: 60px;
+	border-bottom-width: 60px;
+}
+.mon-small .mon-phone:before
+{
+	border-radius: 2px;
+	height: 4px;
+	margin-left: -10px;
+	top: -12px;
+	width: 20px;
+}
+.mon-small .mon-phone:after
+{
+	border-radius: 10px;
+	bottom: -15px;
+	height: 10px;
+	margin-left: -5px;
+	width: 10px;
+}
+.mon-large .mon-phone:before
+{
+	border-radius: 6px;
+	height: 9px;
+	margin-left: -30px;
+	top: -33px;
+	width: 60px;
+}
+.mon-large .mon-phone:after
+{
+	border-radius: 15px;
+	bottom: -43px;
+	height: 30px;
+	margin-left: -15px;
+	width: 30px;
+}
+.mon-laptop
+{
+	background: #fc9252;
+	border: 12px solid #e8ebf0;
+	border-radius: 9px 9px 0 0;
+	display: inline-block;
+	position: relative;
+}
+.mon-laptop:before
+{
+	background: #a5adbd;
+	border-radius: 6px;
+	height: 6px;
+	top: -8px;
+	width: 6px;
+}
+.mon-laptop .mon-content
+{
+	left: 0%;
+	margin-left: 0px;
+	position: relative;
+}
+.mon-btm
+{
+	background: #f4f5f7;
+	border-radius: 0 0 8px 8px;
+	height: 12px;
+	left: -13%;
+	position: relative;
+	top: -1px;
+	width: 126%;
+	z-index: 1;
+}
+.mon-btm:before
+{
+	background: #d8dbe1;
+	border-radius: 0 0 5px 5px;
+	content: "";
+	height: 3px;
+	left: 50%;
+	margin-left: -21px;
+	position: absolute;
+	top: 0;
+	width: 42px;
+}
+.mon-small .mon-laptop
+{
+	border-radius: 6px 6px 0 0;
+	border-width: 8px;
+}
+.mon-small .mon-laptop:before
+{
+	border-radius: 6px;
+	height: 4px;
+	top: -6px;
+	width: 4px;
+}
+.mon-large .mon-laptop
+{
+	border-radius: 12px 12px 0 0;
+	border-width: 16px;
+}
+.mon-large .mon-laptop:before
+{
+	border-radius: 6px;
+	height: 6px;
+	top: -10px;
+	width: 6px;
+}
+.mon-small .mon-btm
+{
+	border-radius: 0 0 4px 4px;
+	height: 8px;
+}
+.mon-small .mon-btm:before
+{
+	border-radius: 0 0 5px 5px;
+	height: 2px;
+	margin-left: -12px;
+	width: 24px;
+}
+.mon-large .mon-btm
+{
+	border-radius: 0 0 10px 10px;
+	height: 16px;
+}
+.mon-large .mon-btm:before
+{
+	border-radius: 0 0 5px 5px;
+	height: 5px;
+	margin-left: -31px;
+	width: 62px;
+}
+
+/* Box shadows for the laptop */
+.mon-laptop-screen-container {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+}
+
+.mon-btm {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+}
