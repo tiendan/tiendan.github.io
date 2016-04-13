@@ -358,10 +358,16 @@ hr.horizontal-separator {
         margin: 10px 0px 0px 30px;
     }
     
-    .mf-demo-container, .broquil-demo-container, .eyetracker-demo-container {
+    .mf-demo-container, .eyetracker-demo-container {
         float: right;
         position: relative;
         right: -40px;
+    }
+    
+    .broquil-demo-container {
+        float: right;
+        position: relative;
+        margin-right: 60px;
     }
     
     .mf-demo-container {
@@ -472,6 +478,10 @@ h5 {
         position: absolute;
         right: 0px;
     }
+    
+    #mf-first-display img {
+        width: 400px;
+    }
 }
 
 
@@ -481,6 +491,10 @@ h5 {
         padding: 0 40px 10px 40px;
         display: none;
         text-align: initial;
+    }
+    
+    #mf-first-display img {
+        width: 400px;
     }
 }
 

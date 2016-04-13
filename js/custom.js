@@ -35,7 +35,7 @@ $(document).ready(function () {
             })
         }
         else if(pagePath == "projects/broquil") {
-            $("#broquil-demo").monitorize();
+            $("#broquil-demo").monitorize({type: "phone", size: "large"});
         }
         else if(pagePath == "projects/eyetracker") {
             $("#eyetracker-demo").monitorize({type: "laptop"});
@@ -51,14 +51,14 @@ $(document).ready(function () {
                 if(e.target.tagName.toLowerCase() === 'input' || 
                    e.target.tagName.toLowerCase() === 'textarea')
                     return;
-                    
+                
                 if(e.keyCode == 37) { // left
-                    if($('li.previous > a').length)
-                        window.location = $('li.previous > a').attr('href');
+                    if($('.pager-previous a').length)
+                        window.location = $('.pager-previous a').attr('href');
                 }
                 else if(e.keyCode == 39) { // right
-                    if($('li.next > a').length)
-                        window.location = $('li.next > a').attr('href');
+                    if($('.pager-next a').length)
+                        window.location = $('.pager-next a').attr('href');
                 }
             });
         }
@@ -72,6 +72,8 @@ $(document).ready(function () {
     var showPage = function(pagePath) {
         if(pagePath == "projects")
             pagePath = "projects/memoryfields"
+        if(pagePath == "")
+            pagePath = "home"
         $.ajax({
             url: "pages/" + pagePath + ".html",
             context: document.body
@@ -83,10 +85,7 @@ $(document).ready(function () {
         });
     }
     
-    if(window.location.hash == "")
-        showPage("home");
-    else
-        showPage(window.location.hash.substr(1));
+    showPage(window.location.hash.substr(1));
         
     // Enable navigating through pages using the hash parameter via JS
     $(window).bind('hashchange', function() {
