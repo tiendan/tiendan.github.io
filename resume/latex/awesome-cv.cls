@@ -100,7 +100,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1.4cm, right=2.0cm, bottom=1.9cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
@@ -504,7 +504,7 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
-  \par\addvspace{1.5ex}
+  \par\addvspace{1.3ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
