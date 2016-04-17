@@ -75,6 +75,7 @@
 .mon-content
 {
 	display: inline-block;
+    background-color: #000;
 }
 .mon-reflection.mon-content:before
 {
@@ -255,7 +256,6 @@
 }
 .mon-phone .mon-content
 {
-	background: #fff;
 	left: 0%;
 	margin-left: 0px;
 	position: relative;

@@ -341,6 +341,26 @@ hr.horizontal-separator {
     -webkit-transform: perspective(650px) rotate3d(1, 0, 0, 40deg);
 }
 
+#mf-first-display img {
+    width: 400px;
+    height: 261px;
+}
+
+#mf-second-display img {
+    width: 320px;
+    height: 209px;
+}
+
+#broquil-demo img {
+    width: 240px;
+    height: 425px;
+}
+
+#eyetracker-demo img {
+    width: 400px;
+    height: 238px;
+}
+
 /* Small displays */
 @media (max-width: 799px) {
     .mf-demo-container, .broquil-demo-container, .eyetracker-demo-container {
@@ -478,10 +498,6 @@ h5 {
         position: absolute;
         right: 0px;
     }
-    
-    #mf-first-display img {
-        width: 400px;
-    }
 }
 
 
@@ -491,10 +507,6 @@ h5 {
         padding: 0 40px 10px 40px;
         display: none;
         text-align: initial;
-    }
-    
-    #mf-first-display img {
-        width: 400px;
     }
 }
 

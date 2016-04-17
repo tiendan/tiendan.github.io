@@ -35,10 +35,10 @@ $(document).ready(function () {
             })
         }
         else if(pagePath == "projects/broquil") {
-            $("#broquil-demo").monitorize({type: "phone", size: "large"});
+            $("#broquil-demo>img").monitorize({type: "phone", size: "large"});
         }
         else if(pagePath == "projects/eyetracker") {
-            $("#eyetracker-demo").monitorize({type: "laptop"});
+            $("#eyetracker-demo>img").monitorize({type: "laptop"});
         }
         else if(pagePath == "projects/memoryfields") {
             $("#mf-first-display>img").monitorize();
