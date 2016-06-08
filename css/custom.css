@@ -338,6 +338,7 @@ hr.horizontal-separator {
 #mf-second-display {
     top: -25px;
     position: relative;
+    transform: perspective(650px) rotate3d(1, 0, 0, 40deg);
     -webkit-transform: perspective(650px) rotate3d(1, 0, 0, 40deg);
 }
 
@@ -356,6 +357,11 @@ hr.horizontal-separator {
     height: 425px;
 }
 
+#dictionary-demo img {
+    width: 240px;
+    height: 420px;
+}
+
 #eyetracker-demo img {
     width: 400px;
     height: 238px;
@@ -363,7 +369,7 @@ hr.horizontal-separator {
 
 /* Small displays */
 @media (max-width: 799px) {
-    .mf-demo-container, .broquil-demo-container, .eyetracker-demo-container {
+    .demo-container {
         text-align: center;
     }
     
@@ -384,7 +390,7 @@ hr.horizontal-separator {
         right: -40px;
     }
     
-    .broquil-demo-container {
+    .broquil-demo-container, .dictionary-demo-container {
         float: right;
         position: relative;
         margin-right: 60px;
@@ -520,7 +526,7 @@ h5 {
         font-size: 30px;
     }
     
-    .mf-demo-container, .broquil-demo-container, .eyetracker-demo-container {
+    .demo-container {
         display: none;
     }
     

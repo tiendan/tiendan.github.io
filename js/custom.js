@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var runPageScripts = function(pagePath) {
+        // Custom scripts for each page
         if(pagePath == "home") {
             $("body").scrollspy({target:".sidebar"});
             $(window).on("load",function(){$("body").scrollspy("refresh")});
@@ -20,6 +21,7 @@ $(document).ready(function () {
             anchors.add('h2');
         }
         else if(pagePath == "academic") {
+            // Enable abstract drawers for publications
             $("a.publication-more").click(function(event) {
                 var parent = $(event.target);
                 
@@ -28,9 +30,11 @@ $(document).ready(function () {
                 
                 parent.toggleClass("drawer-open");
                 
+                // Find the base publication element
                 while(!parent.hasClass("publication"))
                     parent = parent.parent();
                 
+                // Toggle the abstract
                 parent.find(".publication-abstract").slideToggle();
             })
         }
@@ -43,6 +47,9 @@ $(document).ready(function () {
         else if(pagePath == "projects/memoryfields") {
             $("#mf-first-display>img").monitorize();
             $("#mf-second-display>img").monitorize({base: false, size: "small"});
+        }
+        else if(pagePath == "projects/dictionary") {
+            $("#dictionary-demo>img").monitorize({type: "phone", size: "large"});
         }
         
         // Add listeners for left/right keys to switch between projects
