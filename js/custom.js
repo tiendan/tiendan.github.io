@@ -42,7 +42,7 @@ $(document).ready(function () {
             $("#broquil-demo>img").monitorize({type: "phone", size: "large"});
         }
         else if(pagePath == "projects/eyetracker") {
-            $("#eyetracker-demo>img").monitorize({type: "laptop"});
+            ;
         }
         else if(pagePath == "projects/memoryfields") {
             $("#mf-first-display>img").monitorize();
