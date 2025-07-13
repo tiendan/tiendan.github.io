@@ -14,6 +14,7 @@ h1 {
 h2 {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 40px;
+    margin-left: 0.5em;
 }
 
 h3 {
@@ -496,8 +497,8 @@ h5 {
 
 
 .flag {
-  width: 150px;
-  height: 100px;
+  width: 105px;
+  height: 70px;
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -537,6 +538,10 @@ h5 {
 
     
 @media (max-width: 767px) {
+    /* h2 > a {
+        margin-left: 1em;
+    } */
+    
     .publication-abstract {
         padding: 0 40px 10px 40px;
         display: none;
@@ -577,6 +582,23 @@ h5 {
       line-height: 60px;
       background-color: rgba(0, 0, 0, 0.5);
       font-size: 18px;
+    }
+
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    ul {
+      padding-inline-start: 10px
+    }
+    
+    h2 {
+      margin-left: 1em;
+    }
+
+    .anchorjs-link {
+      margin-left: -1.4em !important;
     }
 }
 
